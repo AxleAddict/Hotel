@@ -33,12 +33,12 @@
                                         <Image url="@logo.png" />
                                     </image>
                                 </ImageView>
-                                <Button layoutX="12.0" layoutY="10.0" mnemonicParsing="false" opacity="0.0" prefHeight="104.0" prefWidth="100.0">
+                                <Button fx:id="HomePageButton" layoutX="12.0" layoutY="10.0" mnemonicParsing="false" onAction="#OnClickHomePage" opacity="0.0" prefHeight="104.0" prefWidth="100.0">
                                     <cursor>
                                         <Cursor fx:constant="HAND" />
                                     </cursor>
                                 </Button>
-                                <Button blendMode="EXCLUSION" depthTest="DISABLE" layoutX="472.0" layoutY="28.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="196.0" text="ORDER ONLINE NOW">
+                                <Button fx:id="OrderOnlineButton" blendMode="EXCLUSION" depthTest="DISABLE" layoutX="472.0" layoutY="28.0" mnemonicParsing="false" onAction="#OnClickOrderOnline" prefHeight="48.0" prefWidth="196.0" text="ORDER ONLINE NOW">
                                     <font>
                                         <Font name="System Bold" size="15.0" />
                                     </font>
@@ -69,10 +69,9 @@
                                           <Font size="18.0" />
                                        </font>
                                     </Label>
-                                    <Button layoutX="500.0" layoutY="450.0" mnemonicParsing="false" text="OrderNow">
-                                       <cursor>
-                                          <Cursor fx:constant="HAND" />
-                                       </cursor></Button>
+                                    <Button fx:id="OrderNow1" onAction="#OnClickOrderNow" layoutX="500.0" layoutY="450.0" mnemonicParsing="false" text="OrderNow">
+                                     <Cursor fx:constant="HAND" />
+                                    </Button>
                                     <Separator layoutX="80.0" layoutY="500.0" prefWidth="520.0" />
                                     <Label layoutX="100.0" layoutY="550.0" text="Ragi Rotti" textFill="WHITE">
                                        <font>
@@ -84,10 +83,8 @@
                                           <Font size="18.0" />
                                        </font>
                                     </Label>
-                                    <Button layoutX="500.0" layoutY="550.0" mnemonicParsing="false" text="OrderNow">
-                                        <cursor>
-                                            <Cursor fx:constant="HAND" />
-                                        </cursor>
+                                    <Button fx:id="OrderNow2" onAction="#OnClickOrderNow" layoutX="500.0" layoutY="550.0" mnemonicParsing="false" text="OrderNow">
+                                        <Cursor fx:constant="HAND" />
                                     </Button>
                                     <Separator layoutX="80.0" layoutY="600.0" prefWidth="520.0" />
                                     <Label layoutX="100.0" layoutY="650.0" text="Dal Holige" textFill="WHITE">
@@ -100,10 +97,8 @@
                                           <Font size="18.0" />
                                        </font>
                                     </Label>
-                                    <Button layoutX="500.0" layoutY="650.0" mnemonicParsing="false" text="OrderNow">
-                                        <cursor>
-                                            <Cursor fx:constant="HAND" />
-                                        </cursor>
+                                    <Button fx:id="OrderNow3" onAction="#OnClickOrderNow" layoutX="500.0" layoutY="650.0" mnemonicParsing="false" text="OrderNow">
+                                        <Cursor fx:constant="HAND" />
                                     </Button>
                                     <Separator layoutX="80.0" layoutY="700.0" prefWidth="520.0" />
                                     <Label layoutX="100.0" layoutY="750.0" text="Coconut Holige" textFill="WHITE">
@@ -116,10 +111,8 @@
                                           <Font size="18.0" />
                                        </font>
                                     </Label>
-                                    <Button layoutX="500.0" layoutY="750.0" mnemonicParsing="false" text="OrderNow">
-                                        <cursor>
-                                            <Cursor fx:constant="HAND" />
-                                        </cursor>
+                                    <Button fx:id="OrderNow4" onAction="#OnClickOrderNow" layoutX="500.0" layoutY="750.0" mnemonicParsing="false" text="OrderNow">
+                                        <Cursor fx:constant="HAND" />
                                     </Button>
                                     <Separator layoutX="80.0" layoutY="800.0" prefWidth="520.0" />
                                      <Label layoutX="100.0" layoutY="850.0" text="Kajjaya" textFill="WHITE">
@@ -132,10 +125,8 @@
                                              <Font size="18.0" />
                                          </font>
                                      </Label>
-                                     <Button layoutX="500.0" layoutY="850.0" mnemonicParsing="false" text="OrderNow">
-                                         <cursor>
-                                             <Cursor fx:constant="HAND" />
-                                         </cursor>
+                                     <Button fx:id="OrderNow5" onAction="#OnClickOrderNow" layoutX="500.0" layoutY="850.0" mnemonicParsing="false" text="OrderNow">
+                                         <Cursor fx:constant="HAND" />
                                      </Button>
                                      <Separator layoutX="80.0" layoutY="900.0" prefWidth="520.0" />
                                      <Label layoutX="100.0" layoutY="950.0" text="Haalbhay" textFill="WHITE">
@@ -148,10 +139,8 @@
                                              <Font size="18.0" />
                                          </font>
                                      </Label>
-                                     <Button layoutX="500.0" layoutY="950.0" mnemonicParsing="false" text="OrderNow">
-                                         <cursor>
-                                             <Cursor fx:constant="HAND" />
-                                         </cursor>
+                                     <Button fx:id="OrderNow6" onAction="#OnClickOrderNow" layoutX="500.0" layoutY="950.0" mnemonicParsing="false" text="OrderNow">
+                                         <Cursor fx:constant="HAND" />
                                      </Button>
                                      <Separator layoutX="80.0" layoutY="1000.0" prefWidth="520.0" />
                                      <Label layoutX="100.0" layoutY="1050.0" text="Mangaluru Buns" textFill="WHITE">
@@ -164,10 +153,8 @@
                                              <Font size="18.0" />
                                          </font>
                                      </Label>
-                                     <Button layoutX="500.0" layoutY="1050.0" mnemonicParsing="false" text="OrderNow">
-                                         <cursor>
-                                             <Cursor fx:constant="HAND" />
-                                         </cursor>
+                                     <Button fx:id="OrderNow7" onAction="#OnClickOrderNow" layoutX="500.0" layoutY="1050.0" mnemonicParsing="false" text="OrderNow">
+                                         <Cursor fx:constant="HAND" />
                                      </Button>
                                      <Separator layoutX="80.0" layoutY="1100.0" prefWidth="520.0" />
 

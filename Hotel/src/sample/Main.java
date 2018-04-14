@@ -12,11 +12,13 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
 
-        Parent root = FXMLLoader.load(getClass().getResource("OurMenu.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("HomePage.fxml"));
         //primaryStage.getIcons().add(new Image("@1.png"));
         primaryStage.setTitle("Halli Mane");
-        primaryStage.setScene(new Scene(root, 700, 500));
+        Scene HomePage = new Scene(root, 700, 500);
+        primaryStage.setScene(HomePage);
         primaryStage.show();
+
     }
 
 
